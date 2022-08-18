@@ -15,6 +15,7 @@
   font-family: "Lato", sans-serif;
 }
 
+/* Element Styles */
 body {
   height: 100%;
   font-size: 18px;
@@ -84,6 +85,7 @@ p {
   height: 50px;
 }
 
+/* Nav */
 .nav-items {
   display: flex;
   list-style-type: none;
@@ -99,6 +101,7 @@ p {
   color: #202020;
 }
 
+/* Features Section */
 .features {
   padding-left: 100px;
   padding-right: 70px;
@@ -134,15 +137,16 @@ p {
   margin-top: 30px;
 }
 
-.services {
-  padding: 100px 100px 70px 100px;
-}
-
 h2,
 h3,
 h4,
 h6 {
   color: var(--dark-blue);
+}
+
+/* Services */
+.services {
+  padding: 100px 100px 70px 100px;
 }
 
 .services-header {
@@ -190,6 +194,7 @@ h6 {
   margin-bottom: 25px;
 }
 
+/* Priciing */
 .pricing {
   background: linear-gradient(
     170deg,
@@ -265,6 +270,7 @@ h6 {
   padding: 25px 50px;
 }
 
+/* FeedBack */
 .feedback {
   padding: 150px 100px;
 }
@@ -311,6 +317,7 @@ strong {
   color: var(--dark-blue);
 }
 
+/* Register CTA */
 .register-cta {
   padding: 80px 100px;
   background: repeating-linear-gradient(
@@ -339,6 +346,7 @@ strong {
   color: #fff;
 }
 
+/* Footer */
 footer {
   padding: 150px 80px 50px;
   display: flex;
@@ -371,4 +379,219 @@ h6 {
 .footer-items img:last-child,
 .footer-items p {
   padding: 10px 0;
+}
+
+#mobMenu {
+  display: none;
+}
+
+.mob-only-hr {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    padding: 15px;
+  }
+
+  #mobMenu {
+    display: block;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  /* Element Styles */
+  button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 110%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  p {
+    line-height: 140%;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  /* Nav */
+  .nav-items {
+    display: none;
+  }
+
+  /* Features Section */
+  .features {
+    padding: 0 15px;
+  }
+
+  .feature {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .feature-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .feature-img {
+    margin: 15px auto;
+  }
+
+  .feature-img img {
+    width: 90vw;
+  }
+
+  .feature-button {
+    margin-top: 20px;
+  }
+
+  .mob-only-hr {
+    display: block;
+    width: 100%;
+  }
+
+  /* Services */
+  .services {
+    padding: 0 15px;
+    margin: 15px auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .services-header > div {
+    padding-right: 0;
+  }
+
+  .service-logo {
+    height: 35px;
+    margin-bottom: 15px;
+  }
+
+  .service-heading {
+    margin-bottom: 15px;
+  }
+
+  /* Priciing */
+  .pricing {
+    padding: 20px 0;
+  }
+
+  .pricing-head {
+    padding-bottom: 25px;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .plan {
+    min-height: auto;
+  }
+
+  .plan-intro.popular {
+    padding: 20px 35px;
+  }
+
+  /* FeedBack */
+  .feedback {
+    padding: 20px 15px;
+    margin-top: 20px;
+  }
+  .feedback-head {
+    width: 100%;
+  }
+
+  .feedback-cards {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  .feedback-card {
+    padding: 10px;
+    margin: 10px;
+    min-width: auto;
+  }
+
+  .feedback-person {
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+  }
+  .feedback-person img {
+    padding-right: 18px;
+  }
+
+  /* Register CTA */
+  .register-cta {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .register-cta h2,
+  .register-cta p {
+    margin: 15px 0;
+  }
+
+  .register-cta div {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  .footer-items {
+    margin-right: 30px;
+  }
+
+  .footer-items:first-child {
+    flex: 1;
+  }
 }
